@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+/* style générale du corps */
+
+body{
+    background-image: url(../images/back2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Le style de la fenêtre de chargement */
+.loading_content {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgb(240, 246, 246);
+    z-index: 999;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    text-align: center;
+    padding-top: 25vh;
+}
+
+.charge_fini {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.chargement {
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 2px solid rgb(13, 200, 200);
+    width: 25px;
+    height: 25px;
+    border-top-color: #132333;
+    border-radius: 50%;
+    animation: chargeur 2s linear infinite;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+
+.icon_app{
+    margin-top: 100px;
+    
+}
+
+@keyframes chargeur {
+    0% {
+        transform: rotate(0deg) scale(1);
+        border-top-color: #000066;
+    }
+    25% {
+        border-top-color: #000066;
+    }
+    50% {
+        transform: rotate(360deg) scale(1);
+        border-top-color: #000066;
+    }
+    75% {
+        border-top-color: #000066;
+    }
+    100% {
+        transform: rotate(720deg) scale(1);
+        border-top-color: #000066;
+    }
+}
+
+/* fin des styles de chargement de la page */
+
+.corps_app{
+    background-color: #000066db;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+/*la partie menu ... */
+.bar_menu_haut{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(37, 29, 29);
+    display: grid;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    grid-template-columns: 32px 150px 1fr 50px 200px;
+    align-items: center;
+
+}
+
+.bar_menu_haut img{
+    background-color: white;
+    padding: 3px;
+    width: 34px;
+}
+.bar_menu_haut .app_title{
+    color: white;
+    text-align: left;
+    padding: 3px 3px 3px 3px;
+    background-color: red;
+    border-radius: 2px;
+    text-align: center;
+}
+.bar_menu_haut .searchForm{
+    background-color: rgb(37, 29, 29);
+    padding-left: 20px;
+    text-align: center;
+    
+}
+.bar_menu_haut .searchForm input{
+    font-size: 1.1em;
+    padding: 5px;
+    text-align: center;
+    outline: none;
+}
+.bar_menu_haut .searchForm .search{
+    width: 70%;
+}
+.bar_menu_haut .searchForm .send{
+    width: 50px;
+}
+
+marquee{
+    color: white;
+    font-family: cursive;
+}
+
+/*travaile sur tout les produits, le style */
+
+.tous_les_produits{
+    border: 1px rgb(85, 85, 18) solid;
+    width: 91%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+/* mise en place du style d'un produit */
+.produit{
+    background-color: #000066;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px 0px white;
+}
+
+.produit img{
+    width: 75%;
+    border-radius: 50%;
+}
+
+.produit .nom_produit{
+    font-weight: bold;
+    margin: 12px 0px 8px 0px;
+    color: yellowgreen;    
+}
+
+.produit .prix{
+    font-weight: bold;
+}
+
+@media screen and (max-width:1500px) {
+    .tous_les_produits{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+
+@media screen and (max-width:1000px) {
+    .tous_les_produits{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media screen and (max-width:550px) {
+    .tous_les_produits{
+        grid-template-columns: 1fr;
+    }
+    
+}
+/* mise en forme de form */
+
