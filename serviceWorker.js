@@ -2,7 +2,7 @@
 const staticCacheName = "cache-v1";
 const assets = [
     "/",
-    "/index.html"
+    "/home/index.html"
 ]
 
 //mise en cache des fichiers
