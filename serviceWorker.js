@@ -1,8 +1,8 @@
 //création des constantes pour la gestion des caches pour l'app
 const staticCacheName = "cache-v1";
 const assets = [
-    "home/",
-    "home/index.html"
+    "/",
+    "/index.html"
 ]
 
 //mise en cache des fichiers
