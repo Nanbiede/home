@@ -3,7 +3,7 @@
     "short_name": "Nanbiédé",
     "start_url":"/home/index.html",
     "description":"Application Web Progressive qui vous montre les derniers prix des denrées sur le marché béninois. Appelé \"Nanbiédé\" qui veux dire : \"C'est à Combien ? \" en Fon.",
-    "display":"minimal-ui",
+    "display":"standalone",
     "background_color":"white",
     "theme_color":"red",
     "orientation":"portrait-primary",
