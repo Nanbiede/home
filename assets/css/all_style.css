@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Teko:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -76,7 +78,7 @@ body{
 /* fin des styles de chargement de la page */
 
 .corps_app{
-    background-color: #000066db;
+    background-color: #41360dee;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -93,7 +95,7 @@ body{
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgb(37, 29, 29);
+    background-color: rgb(86, 35, 82);
     display: grid;
     padding-left: 60px;
     padding-right: 60px;
@@ -118,7 +120,7 @@ body{
     text-align: center;
 }
 .bar_menu_haut .searchForm{
-    background-color: rgb(37, 29, 29);
+    background-color: rgb(86, 35, 82);
     padding-left: 20px;
     text-align: center;
     
@@ -129,12 +131,26 @@ body{
     text-align: center;
     outline: none;
 }
+
 .bar_menu_haut .searchForm .search{
-    width: 70%;
+   width: 90%;
 }
-.bar_menu_haut .searchForm .send{
-    width: 50px;
+
+.micro{
+    color: white;
+    background-color: rgb(51, 46, 46);
+    border-radius: 50%;
+    padding: 10px 0px 10px 0px;
+    margin: 0px 7px 0px 7px;
+    cursor: pointer;
 }
+
+.micro:hover{
+    background-color: rgb(21, 20, 20);
+    color: gold;
+}
+
+
 
 marquee{
     color: white;
@@ -145,10 +161,9 @@ marquee{
 
 .tous_les_produits{
     border: 1px rgb(85, 85, 18) solid;
-    width: 91%;
+    width: 98%;
     margin: 0 auto;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 10px;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -157,27 +172,89 @@ marquee{
 
 /* mise en place du style d'un produit */
 .produit{
-    background-color: #000066;
+    background-color: #6f47a3;
     color: white;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 1px 5px 0px white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    padding: 1px;
+    align-items: center;
+    cursor: pointer;
 }
 
 .produit img{
-    width: 75%;
-    border-radius: 50%;
+    width: 100%;
+    min-width: 150px;
+    margin: 0 auto;
+    text-align: center;
+}
+.produit_details{
+    padding: 5px;
 }
 
-.produit .nom_produit{
-    font-weight: bold;
-    margin: 12px 0px 8px 0px;
-    color: yellowgreen;    
+.pdt_dtails{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0px 10px 10px 10px;
 }
 
-.produit .prix{
+.nom_produit{
+    color: gold;
+    padding: 25px 0px 10px 0px;
     font-weight: bold;
 }
+.prix_produit{
+    font-family: Teko;
+    font-size: 1.4em;
+}
+.devise{
+    font-size: 0.5em;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+
+/*pied du site */
+footer{
+    background-color: rgb(86, 35, 82);
+    padding: 20px;
+    margin-top: 15px;
+}
+.droit{
+    color: white;
+    padding-top: 15px;
+    font-family: 'Orelega One';
+}
+
+/* le responsive de la page */
+
+/* responsive du menu fixe */
+
+@media screen and (max-width:900px) {
+    marquee{
+        display: none;
+    }
+    .bar_menu_haut{
+        
+        grid-template-columns: 32px 150px 1fr 50px;
+    
+    }
+}
+
+@media screen and (max-width:650px) {
+    .bar_menu_haut{
+        padding-left: 20px;
+        padding-right: 20px;
+        grid-template-columns: 32px 1fr 50px;
+    
+    }
+    .bar_menu_haut .app_title{
+        display: none;
+    }
+}
+/* fin du responsive du menu */
+
+/* responsive des produits */
 
 @media screen and (max-width:1500px) {
     .tous_les_produits{
@@ -193,11 +270,16 @@ marquee{
     
 }
 
-@media screen and (max-width:550px) {
+@media screen and (max-width:670px) {
     .tous_les_produits{
         grid-template-columns: 1fr;
     }
     
 }
+
+/*fin du responsive des produits */
+
+
+
 /* mise en forme de form */
 
