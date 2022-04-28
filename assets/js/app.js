@@ -1,7 +1,7 @@
 // vérification de la présence des services Workers dans le navigateur
 if("serviceWorker" in navigator)
 {
-    navigator.serviceWorker.register('/serviceWorker.js');
+    navigator.serviceWorker.register('/home/serviceWorker.js');
 }
 //fin de la vérification
 
