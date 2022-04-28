@@ -173,6 +173,7 @@ marquee{
 /* mise en place du style d'un produit */
 .produit{
     background-color: #6f47a3;
+    border: 1px solid #6f47a3;
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -180,6 +181,9 @@ marquee{
     padding: 1px;
     align-items: center;
     cursor: pointer;
+}
+.produit:hover{
+    border: 1px solid gold;
 }
 
 .produit img{
@@ -213,6 +217,174 @@ marquee{
     text-transform: lowercase;
 }
 
+/* les styles du pop up produits */
+.global_details_produit{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #092f569d;
+    overflow: auto;
+    display: none;
+}
+
+.details_produit{
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding: 0px 0px 10px 0px;
+    border-radius: 3px;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 60px;
+    border: 1px #6f47a3 solid;
+    border-bottom: 5px #6f47a3 solid;
+}
+
+.details_produit .nom_produit{
+    display: block;
+    padding: 10px 0px 10px 0px;
+    background-color: #6f47a3;
+    font-size: 1.2em;
+    border-radius: 3px 3px 0px 0px ;
+}
+
+/* mise en forme des champs du pop up */
+.image_produit{
+    width: 94%;
+    margin: 10px;
+    /* border: 1px #6f47a3 solid; */
+    border-radius: 3px;
+    background-color: rgba(130, 148, 148, 0.151);
+}
+
+.description{
+    background-color: rgba(130, 148, 148, 0.151);
+    margin: 10px;
+    text-align: justify;
+    padding: 8px;
+    border-radius: 3px;
+    border-left: 2px #6f47a3 solid;
+    text-indent: 25px;
+}
+
+.logo_liste{
+    background-color: rgba(130, 148, 148, 0.151);
+    border-radius: 3px;
+    text-align: center;
+    padding: 5px;
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+/*
+.logo_liste div:nth-child(1){
+    background-color: #6f47a3;
+    width: 10px;
+    height: 8px;
+    margin: 0 auto;
+    color: #6f47a3;
+    border-radius: 40px 40px 0px 0px;
+}
+
+.logo_liste_ferme div:nth-child(3){
+    background-color: #6f47a3;
+    width: 10px;
+    height: 8px;
+    margin: 0 auto;
+    color: #6f47a3;
+    border-radius: 0px 0px 40px 40px;
+    margin-top: 2px;
+}*/
+
+.logo_liste div{
+    background-color: #6f47a3;
+    color: #6f47a3;
+    width: 100%;
+    height: 3px;
+    margin: 0px auto;
+    border-radius:30px;
+    margin-top: 2px;
+}
+
+
+/*type de barre de design de prix ou autre info sur un produit */
+.type1{
+    background-color: rgba(130, 148, 148, 0.151);
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 5px;
+}
+.type2{
+    background-color: rgba(130, 148, 148, 0.151);
+    margin: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    padding: 0px 0px 5px 0px;
+    line-height: 40px;
+    
+}
+
+.type2 .phi{
+    background-color: #6f47a3;
+    color: white;
+    border-radius: 3px 3px 0px 0px;
+    padding: 5px;
+    /* font-style: italic; */
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.type2 span{
+    background-color: #6f47a3;
+    color: gold;
+    margin: 5px;
+    padding: 5px 10px 5px 10px;
+    font-size: 0.9em;
+    border-radius: 60px;
+}
+
+.type1 .phi{
+    background-color: #6f47a3;
+    color: white;
+    border-radius: 30px 0px 0px 30px;
+    padding: 5px;
+    font-style: italic;
+}
+
+.donnee{
+    border: 1px #6f47a3 solid;
+    border-radius: 0px 30px 30px 0px;
+    padding: 5px;
+}
+
+
+/* boutton pour fermer le modale */
+.close_btn{
+    background-color: #6f47a3;
+    color: white;
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 5px 10px 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close_btn:hover{
+    background-color: rgb(34, 32, 32);
+}
 
 /*pied du site */
 footer{
