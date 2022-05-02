@@ -6,6 +6,7 @@ const assets = [
 ]
 
 //mise en cache des fichiers
+/*
 self.addEventListener("install", (e)=>{
     e.waitUntil(
         caches.open(staticCacheName).then((cache) => {
@@ -18,3 +19,4 @@ self.addEventListener("install", (e)=>{
 self.addEventListener('fetch', (event) => {
     console.log(event.request);
 })
+*/
