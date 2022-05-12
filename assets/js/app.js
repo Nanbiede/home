@@ -14,6 +14,16 @@
     microPhone.addEventListener("click", alertMicro);
 //fin alert au micro
 
+//interaction dans le formulaire
+    var champSearch = document.getElementById("search");
+
+    function csMission() {
+        alert("Il veut faire une recherche de produit");
+        champSearch.removeEventListener("click", csMission)
+    }
+    champSearch.addEventListener("click", csMission)
+//fin de l'interaction dans le formulaire
+
 // selection des produits sur la page index.html
     var produits = document.getElementsByClassName('produit');
     var modalBackEnd = document.getElementsByClassName('global_details_produit')[0];

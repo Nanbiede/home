@@ -29,7 +29,7 @@
         <div class="bar_menu_haut">
             <img src="assets/images/icon_72x72.png" alt="logo Nanbiédé">
             <h2 class="app_title">Nanbiédé ?</h2>
-            <form action="" class="searchForm">
+            <form action="/" class="searchForm">
                 <span class="choix"></span>
                 <input type="text" placeholder="chercher une denrée, touche 'Entrée pour valider' " id="search" class="search">
             </form>
@@ -61,18 +61,28 @@
                 </div>
             </div>
 
+            <div class="produit">
+                <img src="assets/images/back5.jpg" alt="image produit">
+                <div class="produit_details">
+                    <div class="pdt_dtails">
+                        <i class="fa-brands fa-product-hunt"></i>
+                        <span class="nom_produit">Nom Du Produit</span>
+                        <span class="prix_produit"><i class="fa-solid fa-hand-holding-dollar"></i>  &nbsp; 500 <i class="montant"></i><i class="devise">&nbsp; FCFA</i></span>
+                    </div>
+                </div>
+            </div>
 
-            
-            
-            
+            <div class="produit">
+                <img src="assets/images/back5.jpg" alt="image produit">
+                <div class="produit_details">
+                    <div class="pdt_dtails">
+                        <i class="fa-brands fa-product-hunt"></i>
+                        <span class="nom_produit">Nom Du Produit</span>
+                        <span class="prix_produit"><i class="fa-solid fa-hand-holding-dollar"></i>  &nbsp; 500 <i class="montant"></i><i class="devise">&nbsp; FCFA</i></span>
+                    </div>
+                </div>
+            </div>
 
-            
-
-
-            
-
-
-                
         </div>
         <footer>
             <hr>
@@ -174,7 +184,7 @@
         function showContent() {
             document.querySelector('.loading_content').classList.add('charge_fini');
         }
-        setTimeout(showContent, 5000);
+        setTimeout(showContent, 1000);
     </script>
     <!-- fin du script de chargement -->
     
