@@ -17,12 +17,12 @@
 </head>
 <body>
     <!-- Création du block de chargement -->
-    <!--
+    
     <div class="loading_content">
         <img src="assets/images/icon_72x72.png" alt="" class="icon_app">
         <div class="chargement"></div>
     </div>
-    -->
+    <!-- -->
     <!-- Fin du block de chargement -->
 
     <div class="corps_app">
@@ -165,15 +165,19 @@
         </div>
     </div>
 
+
+    <!-- les scripts Javascript -->
     <script src="assets/js/app.js"></script>
-    <!--
+    
+    <!-- retardement du script de chargement -->
+    <!-- -->
     <script>
         function showContent() {
             document.querySelector('.loading_content').classList.add('charge_fini');
         }
-        setTimeout(showContent, 2000);
+        setTimeout(showContent, 5000);
     </script>
-    -->
+    <!-- fin du script de chargement -->
     
 </body>
 </html>
